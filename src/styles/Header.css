@@ -1,0 +1,36 @@
+.header {
+  text-align: center;
+  background: none;
+  padding: 1em 0;
+}
+
+.header-container {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.header-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+}
+
+.header-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #e76f51;
+} 
+
+@media (max-width: 768px) {
+  .header-button {
+    padding: 8px 16px;
+    margin: 3px;
+  }
+}

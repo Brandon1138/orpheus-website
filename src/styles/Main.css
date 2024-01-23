@@ -1,0 +1,30 @@
+.main-content {
+  padding: 1em;
+  width: 100%;
+  margin-top: 4em;
+  min-height: calc(100vh - 8em);
+}
+
+.section {
+  padding: 3em 1em;
+  text-align: center;
+}
+
+#destinations, #experiences, #testimonials {
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 2em 0;
+}
+
+#destinations {
+  /* Style specific to this section */
+}
+
+#experiences {
+  /* Style specific to this section */
+}
+
+#testimonials {
+  /* Style specific to this section */
+  background-color: #ddd;
+}
