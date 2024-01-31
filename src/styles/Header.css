@@ -1,36 +1,95 @@
+@font-face {
+  font-family: 'Copperplate Gothic Bold Regular';
+  src: url('../fonts/CopperplateGothicBold.ttf') format('truetype');
+}
+
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background: none;
   padding: 1em 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Style for the title and tagline container */
+.header-title {
+  margin-bottom: 20px; /* adjust as needed */
+  font-size: 1.15rem;
+}
+
+.brand-container::before,
+.brand-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 190px;
+  height: 3px;
+  background-color: #E1B662;
+}
+
+.brand-container::before {
+  left: -225px;
+}
+
+.brand-container::after {
+  right: -225px;
+}
+
+.brand-container {
+  position: relative;
+  display: inline-block;
+  font-size: 3em;
+  color: #E1B662;
+  font-family: 'Copperplate Gothic Bold Regular', serif;
+  letter-spacing: 0.15em;
+}
+
+.tagline-container {
+  font-size: 1.1em;
+  color: #D3C8BF;
+  font-family: 'Copperplate Gothic Bold Regular', serif;
+  letter-spacing: 0.25em;
 }
 
 .header-container {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0.5em;
 }
 
 .header-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  text-decoration: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
-  border-radius: 40px;
-  transition: background-color 0.3s;
+  border: 1px solid rgba(204, 203, 199, 0.34);
+  background-color: rgba(217, 217, 217, 0.05);
+  color: #D3C8BF;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  min-width: 100px; /* Ensure consistent width */
 }
 
 .header-button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #e76f51;
-} 
+  background-color: rgba(217, 217, 217, 0.1); /* Slight change on hover */
+  color: #F3F7E1;
+}
 
 @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+
   .header-button {
-    padding: 8px 16px;
-    margin: 3px;
+    margin-bottom: 10px; /* Space between buttons on smaller screens */
   }
 }

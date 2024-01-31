@@ -1,52 +1,48 @@
 .hero {
-  background: url('../images/Hero_Image.png') center center/cover no-repeat;
-  height: 100vh;
+  background: url('../images/Hero_Image.png') center center no-repeat;
+  background-size: auto;
+  min-height: 1200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+:root {
+  --header-height: 120px;
 }
 
 .hero-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-}
-
-.hero h1 {
-  font-size: 5rem;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.hero p {
-  font-size: 2rem;
-  margin-bottom: 2em;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: var(--header-height);
+  z-index: 2;
+  position: relative;
 }
 
 .hero .cta-button {
-  padding: 1em 2em;
-  background-color: #e76f51;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 1rem;
+  padding: 0.5em 1em;
+  background-color: rgba(217, 217, 217, 0.05);
+  color: #D3C8BF;
+  border: 1px solid rgba(204, 203, 199, 0.34);
+  border-radius: 20px;
+  font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
   cursor: pointer;
   text-transform: uppercase;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  text-align: center;
 }
 
 .hero .cta-button:hover {
-  background-color: #f4a261;
+  background-color: rgba(217, 217, 217, 0.1);
+  color: #F3F7E1;
 }
 
 @media (max-width: 768px) {
