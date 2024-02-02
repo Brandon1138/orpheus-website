@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 
+/* a reordering of this page would be in order */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .footer {
+  margin-top: auto;
   background-color: #0A1B21;
   font-family: "Open Sans", sans-serif;
   color: #F3F7E1;
@@ -15,26 +24,31 @@
   flex-wrap: wrap;
   gap: 1em;
   align-items: baseline;
+  height: 150px;
 }
 
 .footer h1 {
-  font-size: 24px;
+  font-size: 1.15rem;
   font-weight: 800;
   color: #F3F7E1;
   letter-spacing: 0.03em;
 }
 
 .footer-bottom {
-  margin-top: 20px; /* Adjust this value as needed */
+  margin-top: 20px; 
+}
+
+.footer-bottom p {
+  font-size: 0.675rem;
 }
 
 .footer-tagline {
-  font-size: 14px;
+  font-size: 0.675rem;
   font-weight: 700;
   color: #FAAD26;
   letter-spacing: 0.03em;
-  margin-top: -12px; /* Adjust this value as needed */
-  margin-bottom: 24px; /* Adjust this value as needed */
+  margin-top: 16px; 
+  margin-bottom: 16px; 
 }
 
 .footer-buttons {
@@ -46,14 +60,15 @@
   border: 1px solid rgba(204, 203, 199, 0.34);
   background-color: rgba(217, 217, 217, 0.05);
   color: #D3C8BF;
-  font-size: 14px;
+  font-size: 0.65rem;
   border-radius: 20px;
   padding: 0.5em 1em;
   margin-right: 20px;
-  min-width: 100px;
+  min-width: 80px;
   text-align: center;
   flex: 1 0 auto;
   margin: 0 10px;
+  margin-bottom: -15px;
 }
 
 .email-input {
@@ -86,17 +101,20 @@
 
 .footer-column.legal {
   text-align: left;
+  font-size: 0.675rem;
 }
 
 .footer-column.contact {
   text-align: right;
   line-height: 0.2;
+  font-size: 0.675rem;
 }
 
 .contact-info {
   margin-top: 1px; /* Adjust this value as needed */
   margin-bottom: 12px; /* Adjust this value as needed */
   line-height: 0.7;
+  font-size: 0.675rem;
 }
 
 .contact-info-wrapper {
@@ -106,6 +124,7 @@
 .footer-link {
   color: #fff;
   text-decoration: none;
+  padding-top: 10px;
 }
 
 .center-stack {
@@ -128,7 +147,7 @@
   border-radius: 25px; /* Adjust this value as needed */
   overflow: hidden;
   background-color: #F0F0F0;
-  margin-top: 20px;
+  margin-top: 25px;
   width: 200px;
 }
 
@@ -137,6 +156,7 @@
   padding: 0.5em;
   border: none;
   outline: none;
+  font-size: 0.675rem;
 }
 
 .subscribe-button {
@@ -152,8 +172,8 @@
   cursor: pointer;
 }
 
-.social-icon {
-  margin-right: 10px;
+.social-icon img {
+  transform: scale(0.75);
 }
 
 .social-icon:last-child {

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #FAE4C7;
+  
+}
+
+.services-card {
+  background-color: #0A1B21;
+  color: #F3F7E1;
+  padding: 30px 38px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.services-card.customize {
+  background-color: transparent;
+  color: #0A1B21 ;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: -.85rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #FAAD26
+}
+
+.customize h3 {
+  color: #156F8B;
+}
+
+.customize p {
+  color: #0A1B21;
+}
+
+.customize hr {
+  background-color: #156F8B;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #D3C8BF;
+}
+
+hr {
+  border: none;
+  height: 1.1px;
+  max-width: 40%;
+  background-color: #FAAD26;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    grid-template-columns: 1fr;
+  } 
+
+  .services-card {
+    margin-bottom: 20px;
+  }
+}
