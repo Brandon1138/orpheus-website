@@ -1,7 +1,7 @@
 .hero {
   background: url('../images/Hero_Image.png') top center no-repeat;
   background-size: 100% auto;
-  min-height: 1200px;
+  padding-bottom: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 }
 
 :root {
-  --header-height: 120px;
+  --header-height: 46%;
 }
 
 .hero-content {
@@ -25,27 +25,22 @@
   position: relative;
 }
 
-.empty-space {
-  flex-grow: 1;
-}
-
 .hero .cta-button {
-  padding: 0.5em 1em;
+  padding: 0.385em 0.77em; /* 15% bigger */
   background-color: rgba(250, 173, 38, 0.31);
   color: #D3C8BF;
-  border: 2px solid rgba(250, 173, 38, 1);
-  border-radius: 20px;
-  font-size: 14px;
+  border: 0.0966rem solid rgba(250, 173, 38, 1); /* 15% bigger */
+  border-radius: 0.966rem; /* 15% bigger */
+  font-size: 0.67275rem; /* 15% bigger */
   font-weight: normal;
   cursor: pointer;
   transition: all 0.3s ease;
-  min-width: 100px;
+  min-width: 4.807rem; /* 15% bigger */
   text-align: center;
-  margin-bottom: 320px;
 }
 
 .hero .cta-button:hover {
-  background-color: rgba(217, 217, 217, 0.1);
+  background-color: rgba(250, 173, 38, 1);
   color: #F3F7E1;
 }
 

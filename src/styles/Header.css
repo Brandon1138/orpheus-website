@@ -20,8 +20,8 @@
 
 /* Style for the title and tagline container */
 .header-title {
-  margin-bottom: 20px; /* adjust as needed */
-  font-size: 1.15rem;
+  margin-bottom: 1.25rem; /* adjust as needed */
+  font-size: 0.75rem;
 }
 
 .brand-container::before,
@@ -30,17 +30,17 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 190px;
-  height: 3px;
+  width: 7.5rem;
+  height: 0.1225rem;
   background-color: #E1B662;
 }
 
 .brand-container::before {
-  left: -225px;
+  left: -9.42rem;
 }
 
 .brand-container::after {
-  right: -225px;
+  right: -9.42rem;
 }
 
 .brand-container {
@@ -68,15 +68,17 @@
 }
 
 .header-button {
-  border: 1px solid rgba(204, 203, 199, 0.34);
+  border: 0.041875rem solid rgba(204, 203, 199, 0.34);
   background-color: rgba(217, 217, 217, 0.05);
   color: #D3C8BF;
-  font-size: 14px;
-  border-radius: 20px;
-  padding: 0.5em 1em;
+  font-size: 0.58625rem;
+  border-radius: 0.8375rem;
+  padding: 0.335em 0.67em;
   text-align: center;
-  transition: background-color 0.3s ease;
-  min-width: 100px; /* Ensure consistent width */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 4.1875rem; /* Ensure consistent width */
+  margin-top: -0.9rem;
+  text-decoration: none;
 }
 
 .header-button:hover {
@@ -84,12 +86,12 @@
   color: #F3F7E1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
   .header-container {
     flex-direction: column;
   }
 
   .header-button {
-    margin-bottom: 10px; /* Space between buttons on smaller screens */
+    margin-bottom: 0.625rem; /* Space between buttons on smaller screens */
   }
 }

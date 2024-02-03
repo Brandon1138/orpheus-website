@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #FAE4C7;
-  
 }
 
 .services-card {
@@ -22,13 +21,15 @@
 h1 {
   text-transform: uppercase;
   margin-bottom: -.85rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
+  letter-spacing: 0.05rem;
 }
 
 h3 {
   text-transform: uppercase;
-  color: #FAAD26
+  color: #FAAD26;
+  font-size: 0.92rem;
 }
 
 .customize h3 {
@@ -44,7 +45,7 @@ h3 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #D3C8BF;
 }
 

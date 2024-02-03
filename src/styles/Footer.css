@@ -69,6 +69,13 @@ body {
   flex: 1 0 auto;
   margin: 0 10px;
   margin-bottom: -15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: rgba(217, 217, 217, 0.1); /* Slight change on hover */
+  color: #F3F7E1;
 }
 
 .email-input {
