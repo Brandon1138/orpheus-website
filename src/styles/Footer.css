@@ -13,16 +13,16 @@ body {
   background-color: #0A1B21;
   font-family: "Open Sans", sans-serif;
   color: #F3F7E1;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* This creates a three-column layout */
   align-items: start; /* This aligns items to the start of the grid cell */
-  gap: 1em;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 1rem;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1rem;
   align-items: baseline;
   height: 150px;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .footer-bottom {
-  margin-top: 20px; 
+  margin-top: 25px; 
 }
 
 .footer-bottom p {
@@ -83,7 +83,7 @@ body {
 
 .legal-info {
   display: block;
-  margin-top: -15px; /* Adjust this value as needed */
+  margin-top: -20px; /* Adjust this value as needed */
   margin-bottom: 2px; /* Adjust this value as needed */
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .contact-info {
-  margin-top: 1px; /* Adjust this value as needed */
+  margin-top: -5px; /* Adjust this value as needed */
   margin-bottom: 12px; /* Adjust this value as needed */
   line-height: 0.7;
   font-size: 0.675rem;
