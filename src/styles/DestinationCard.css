@@ -1,0 +1,31 @@
+.destination-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional */
+}
+
+.destination-card img {
+  width: 100%;
+  display: block; /* Removes any space below the image */
+}
+
+.destination-card h3 {
+  margin: 10px 0;
+}
+
+.destination-card p {
+  font-size: 0.9rem;
+}
+
+.destination-card button {
+  background-color: #e76f51; /* Or your brand color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.destination-card button:hover {
+  background-color: #f4a261;
+}

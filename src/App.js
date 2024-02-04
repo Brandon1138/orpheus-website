@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import ServicesSection from './components/ServicesSection';
+import DestinationsSection from './components/DestinationsSections';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         <ServicesSection> 
           
         </ServicesSection>
+        <DestinationsSection>
+          
+        </DestinationsSection>
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>

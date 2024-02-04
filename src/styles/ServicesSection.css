@@ -18,7 +18,7 @@
   color: #0A1B21 ;
 }
 
-h1 {
+.services-section h1 {
   text-transform: uppercase;
   margin-bottom: -.85rem;
   font-size: 1.5rem;
@@ -26,10 +26,14 @@ h1 {
   letter-spacing: 0.05rem;
 }
 
-h3 {
+.services-section h3 {
   text-transform: uppercase;
   color: #FAAD26;
   font-size: 0.92rem;
+}
+
+.customize h1 {
+  color: #0A1B21;
 }
 
 .customize h3 {

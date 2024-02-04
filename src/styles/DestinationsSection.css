@@ -1,0 +1,63 @@
+.destinations-section {
+  padding: 10px;
+  background-color: #0A1B21; /* Or any color that fits your design */
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 1.75rem solid #FAE4C7;
+  border-bottom: 1.75rem solid #FAE4C7;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow-x: auto; /* For horizontal scrolling */
+  padding: 8px 0;
+}
+
+.destinations-section h1 {
+  text-transform: uppercase;
+  margin-bottom: -.85rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  color: #F3F7E1
+}
+
+.destinations-section h3 {
+  text-transform: uppercase;
+  color: #FAAD26;
+  font-size: 0.92rem;
+}
+
+.destinations-section p {
+  padding: 0 8rem 0 8rem;
+  margin-bottom: 1rem;
+  color: #D3C8BF;
+  font-size: 0.7em;
+}
+
+.cta-button {
+  padding: 0.385em 0.77em; /* 15% bigger */
+  background-color: rgba(250, 173, 38, 0.31);
+  color: #D3C8BF;
+  border: 0.0966rem solid rgba(250, 173, 38, 1); /* 15% bigger */
+  border-radius: 0.966rem; /* 15% bigger */
+  font-size: 0.67275rem; /* 15% bigger */
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 4.807rem; /* 15% bigger */
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: rgba(250, 173, 38, 1);
+  color: #F3F7E1;
+}
+
+@media (max-width: 768px) {
+  .destinations-grid {
+    grid-template-columns: 1fr 1fr; /* Adjust based on desired layout on smaller screens */
+  }
+}
