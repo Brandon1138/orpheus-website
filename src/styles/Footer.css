@@ -14,7 +14,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #F3F7E1;
   letter-spacing: 0.03rem;
-  display: grid;
+  display: grid; /* This creates a grid layout and I should really change this to FLEX, LATER ON REMEMBER JAR JAR BINKS */
   grid-template-columns: 1fr 1fr 1fr; /* This creates a three-column layout */
   align-items: start; /* This aligns items to the start of the grid cell */
   gap: 1rem;
@@ -32,6 +32,7 @@ body {
   font-weight: 800;
   color: #F3F7E1;
   letter-spacing: 0.03em;
+  margin-bottom: 0px;
 }
 
 .footer-bottom {
@@ -39,7 +40,7 @@ body {
 }
 
 .footer-bottom p {
-  font-size: 0.675rem;
+  font-size: 0.6rem;
 }
 
 .footer-tagline {
@@ -47,7 +48,7 @@ body {
   font-weight: 700;
   color: #FAAD26;
   letter-spacing: 0.03em;
-  margin-top: 16px; 
+  margin-top: 4px; 
   margin-bottom: 16px; 
 }
 
